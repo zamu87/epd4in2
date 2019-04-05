@@ -7,7 +7,6 @@ A Node.js package for the 4.2inch e-Paper waveshare display on a Raspberry Pi 2/
 ## Dependencies
 1. WiringPi for GPIO access of Raspberry Pi
 2. libgd2 for text output and drawing
-3. rpi-gpio-buttons for HAT keys handling
 
 ## Installation
 Enable the SPI interface on Raspberry Pi: `sudo raspi-config`
