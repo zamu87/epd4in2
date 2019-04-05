@@ -1,0 +1,22 @@
+{
+  "name": "epd4in2",
+  "version": "0.1.0",
+  "description": "node module for the 4.2 inch waveshare epaper display",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [
+    "epaper",
+    "epd",
+    "waveshare"
+  ],
+  "author": "Stefano Zamuner",
+  "license": "ISC",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.12.1",
+    "node-gd": "^1.5.4"
+  }
+}
