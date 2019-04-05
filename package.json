@@ -7,14 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "node-gyp rebuild"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamu87/epd4in2.git"
+  },,
   "keywords": [
     "epaper",
     "epd",
     "waveshare"
   ],
-  "author": "Stefano Zamuner",
+  "author": "Stefano Zamüner",
   "license": "ISC",
   "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/zamu87/epd4in2/issues"
+  },
   "dependencies": {
     "nan": "^2.12.1",
     "node-gd": "^1.5.4"
