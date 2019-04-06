@@ -303,7 +303,12 @@ void display(UBYTE * image)
   SendCommand(DATA_START_TRANSMISSION_2);
   for (UWORD j = 0; j < Height; j++) {
       for (UWORD i = 0; i < Width; i++) {
-          SendData(image[i + j * Width]);
+          // SendData(image[i + j * Width]);
+          UBYTE buffer = 0xff;
+          for (UWORD k = 0; k < 8; k++) {
+            buffer = (buffer << 1) | (image[ 8 * (i + j * Width) + k ] & 0x01);
+          }
+          SendData(buffer);
       }
   }
   TurnOnDisplay();

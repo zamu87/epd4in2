@@ -8,9 +8,9 @@ function getImageBuffer(orientation) {
 	return new Promise(resolve => {
 		let img
 		if (orientation === undefined || orientation === 'portrait') {
-			img = gd.createSync(width, height);
-		} else {
 			img = gd.createSync(height, width);
+		} else {
+			img = gd.createSync(width, height);
 		}
 
 		for (let i=0; i<256; i++) {
